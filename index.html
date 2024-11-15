@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global News Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Global News Hub</h1>
+      <div class="search-container">
+        <input type="text" id="searchQuery" placeholder="Search for news...">
+        <button id="searchBtn">🔍</button>
+      </div>
+    </header>
+
+    <div class="filters-container">
+      <div class="filter">
+        <label for="country">Country:</label>
+        <select id="country">
+          <option value="">All</option>
+          <option value="us">USA</option>
+          <option value="in">India</option>
+          <option value="uk">UK</option>
+          <option value="ca">Canada</option>
+          <option value="au">Australia</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+        </select>
+      </div>
+
+      <div class="filter">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="">All</option>
+          <option value="business">Business</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="health">Health</option>
+          <option value="science">Science</option>
+          <option value="sports">Sports</option>
+          <option value="technology">Technology</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="newsContainer" class="news-container"></div>
+
+    <div class="pagination">
+      <button id="prevBtn" class="btn">Previous</button>
+      <span id="pageNumber">Page 1</span>
+      <button id="nextBtn" class="btn">Next</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
